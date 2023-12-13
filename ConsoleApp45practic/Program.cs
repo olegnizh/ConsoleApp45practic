@@ -19,6 +19,10 @@ namespace ConsoleApp45practic
             Console.WriteLine("Введите логин");
             User.Login = Console.ReadLine();
 
+            User.LoginLength = User.Login.Length;
+            Console.WriteLine("Длина логина {0}", User.LoginLength);
+
+
 
         }
     }
