@@ -22,6 +22,25 @@ namespace ConsoleApp45practic
             User.LoginLength = User.Login.Length;
             Console.WriteLine("Длина логина {0}", User.LoginLength);
 
+            string yesno = "";
+            while (true)
+            {
+                Console.WriteLine("Есть ли у вас животные? Да или Нет");
+                yesno = Console.ReadLine();
+                if (yesno == "Да")
+                {
+                    User.HasPet = true;
+                    break;
+                }
+                else if (yesno == "Нет")
+                {
+                    User.HasPet = false;
+                    break;
+                }
+            }
+            string Answer = User.HasPet ? "Да" : "Нет";
+            Console.WriteLine("Вы ответили {0}", Answer);
+
 
 
         }
